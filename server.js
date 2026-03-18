@@ -51,6 +51,11 @@ app.use('/api/v1/restock', restockRoutes);
 app.use('/api/v1/reports', reportRoutes);
 app.use('/api/v1/settings', settingsRoutes);
 
+// Root route (for Render test)
+app.get('/', (req, res) => {
+  res.send('GroceryIQ API is running');
+});
+
 // Health check
 app.get('/api/v1/health', (req, res) => {
   res.status(200).json({
