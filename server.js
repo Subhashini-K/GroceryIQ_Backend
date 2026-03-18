@@ -31,7 +31,7 @@ const app = express();
 // Security & utility middleware
 app.use(helmet());
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-frontend.vercel.app'],
+  origin: ['http://localhost:5173', 'https://grocery-iq-frontend.vercel.app'],
   credentials: true
 }));
 app.use(morgan('dev'));
